@@ -71,7 +71,7 @@ const main = async () => {
                     const { nombre, telefono } = row;
 
                     try {
-                        const response = await axios.post('http://localhost:3008/v1/messages', {
+                        const response = await axios.post('http://localhost:8080/v1/messages', {
                             number: '57' + telefono,
                             message: addRandomEmoji(message.replace('{nombre}', nombre)),
                             urlMedia
