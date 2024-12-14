@@ -86,8 +86,7 @@ const main = async () => {
                         console.error('Error al llamar al otro endpoint:', error);
                     }
                 }
-                
-                res.status(200).json({ message: 'Mensajes enviados correctamente' });
+                res.end('Mensajes enviados correctamente');
             });
 
     });
