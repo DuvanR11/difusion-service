@@ -13,7 +13,7 @@ import { addRandomEmoji } from './utils/emojis';
 
 // import { sendEmail } from 'utils/email/sendMail';
 
-const PHONE_NUMBER ='573242170537'
+const PHONE_NUMBER ='573204084584'
 // const PHONE_NUMBER ='573102782407'
 const PORT = process.env.PORT ?? 3008
 
@@ -55,7 +55,7 @@ const main = async () => {
     adapterProvider.server.post('/upload', upload.single('csvFile'), async (req: any, res) => {
 
         if (!req.file) {
-            return res.end('No se ha subido ningún archivo');
+            res.end('No se ha subido ningún archivo');
         }
 
         const { message, urlMedia } = req.body
@@ -86,7 +86,8 @@ const main = async () => {
                         console.error('Error al llamar al otro endpoint:', error);
                     }
                 }
-                return res.end('Mensajes enviados');
+                
+                res.status(200).json({ message: 'Mensajes enviados correctamente' });
             });
 
     });
