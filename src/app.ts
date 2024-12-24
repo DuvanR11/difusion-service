@@ -13,7 +13,7 @@ import { addRandomEmoji } from './utils/emojis';
 
 // import { sendEmail } from 'utils/email/sendMail';
 
-const PHONE_NUMBER ='573204084584'
+const PHONE_NUMBER ='573242170537'
 // const PHONE_NUMBER ='573102782407'
 const PORT = process.env.PORT ?? 3008
 
