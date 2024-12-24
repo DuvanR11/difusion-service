@@ -3,7 +3,7 @@ function getRandomEmoji(emojis) {
     return emojis[randomIndex];
 }
 
-const emojis = ['🇨🇴', '🤝', '👏🏽', '✋🏽', '🙏🏽', '🫂', '🪖', '🎖'];
+const emojis = ['🇨🇴', '🎄', '🌲', '🪅', '🙏🏽', '🫂'];
 
 export function addRandomEmoji(message) {
     const randomEmoji = getRandomEmoji(emojis);
